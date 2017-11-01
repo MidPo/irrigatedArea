@@ -1,4 +1,3 @@
-/*修改下试试*/
 var vectorMapdoc, vectorLayer;
  
  var layerArray;//该变量存储创建过的所有图层及其名称和id。是一个对象数组
