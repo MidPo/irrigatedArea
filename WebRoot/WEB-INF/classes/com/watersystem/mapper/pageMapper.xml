@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.watersystem.mapper.pageMapper">
+
+     <select id="findGateDataCount" resultType="Integer">
+     SELECT COUNT(*) FROM beitun_gatedata
+     </select>
+
+     
+     <select id="findPageGateData" parameterType="com.watersystem.po.pageQueryVo" resultType="com.watersystem.po.gateData">   
+      SELECT * FROM beitun_gatedata LIMIT #{currentId},#{pageSize}
+     </select>
+     
+     <select id="findGateDataCountBySelect" parameterType="com.watersystem.po.pageQueryVo" resultType="Integer">
+     SELECT COUNT(*) FROM beitun_gatedata 
+     <where>
+        <if test="measureStation!=null and measureStation!=0">
+            AND gateStationNum=#{measureStation}
+            <if test="gateGroup!=null and gateGroup!=0">
+            AND gateGroupNum=#{gateGroup}
+            </if>
+            <if test="gate!=null and gate!=0">
+            AND gateNum=#{gate}
+            </if>
+        </if>
+     </where> 
+     </select>
+     
+     <select id="findPageGateDataBySelect" parameterType="com.watersystem.po.pageQueryVo" resultType="com.watersystem.po.gateData">   
+      SELECT * FROM beitun_gatedata
+      <where>
+        <if test="measureStation!=null and measureStation!=0">
+            AND gateStationNum=#{measureStation}
+            <if test="gateGroup!=null and gateGroup!=0">
+            AND gateGroupNum=#{gateGroup}
+            </if>
+            <if test="gate!=null and gate!=0">
+            AND gateNum=#{gate}
+            </if>
+        </if>
+     </where> 
+
+     LIMIT #{currentId},#{pageSize}
+     </select>
+     
+     
+     
+</mapper>

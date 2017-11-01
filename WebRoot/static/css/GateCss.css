@@ -1,0 +1,157 @@
+/* 闸孔1*/
+div#mainBlock1{
+	position:relative;
+    left:125px;
+	width:100px;
+	height:300px;
+	border-style:solid;
+	border-width: 0.5px;
+	background-color: white;
+	z-index: 1;
+}
+
+div#blank1_1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:38.75px;
+	height:100px;
+
+	z-index:3;
+
+}
+
+div#blank1_2 {
+	position:absolute;
+	left:61px;
+	top:0px;
+	width:38.75px;
+	height:50px;
+	
+	z-index: 3;
+
+}
+
+div#rope1 {
+	position: relative;
+	left:38.75px;
+	width:22.5px;
+	height:100px;
+	background-color: black;
+	z-index: 3;
+
+}
+
+div#door1 {
+	position: relative;
+	top:0px;
+	width:99.5px;
+	height:90px;
+	background-color: grey;
+	border-style: solid;
+	border-width: 0.5px;
+	z-index: 3;
+}
+
+div#waterLevel1 {
+
+	position: absolute;
+	left:0px;
+	bottom:0px;
+	width:99.75px;
+	height:1px;
+	border-style:solid solid solid none;
+	border-color: red none black none;
+	border-width: 0.5px;
+	background-color: #00FFFF;
+	z-index: 2;
+}
+
+div#waterLine1 {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:100px;
+	height:1px;
+	background-color: red;
+	z-index: 2;
+}
+
+/* 闸孔2*/
+div#mainBlock2{
+	position:relative;
+    left:125px;
+	width:100px;
+	height:300px;
+	border-style:solid;
+	border-width: 0.5px;
+	background-color: white;
+	z-index: 1;
+}
+
+div#blank2_1 {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:38.75px;
+	height:100px;
+
+	z-index:3;
+
+}
+
+div#blank2_2 {
+	position:absolute;
+	left:61px;
+	top:0px;
+	width:38.75px;
+	height:50px;
+	
+	z-index: 3;
+
+}
+
+div#rope2{
+	position: relative;
+	left:38.75px;
+	width:22.5px;
+	height:100px;
+	background-color: black;
+	z-index: 3;
+
+}
+
+div#door2 {
+	position: relative;
+	top:0px;
+	width:99.5px;
+	height:90px;
+	background-color: grey;
+	border-style: solid;
+	border-width: 0.5px;
+	z-index: 3;
+}
+
+div#waterLevel2{
+
+	position: absolute;
+	left:0px;
+	bottom:0px;
+	width:99.75px;
+	height:1px;
+	border-style:solid solid solid none;
+	border-color: red none black none;
+	border-width: 0.5px;
+	background-color: #00FFFF;
+	z-index: 2;
+}
+
+div#waterLine2 {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	width:100px;
+	height:1px;
+	background-color: red;
+	z-index: 2;
+}
